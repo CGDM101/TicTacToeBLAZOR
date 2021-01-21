@@ -1,5 +1,6 @@
-﻿@page "/"
+﻿
 @using TicTacToeBLAZOR.Models; <!-- referens till mappen med klasserna -->
+@page "/"
 
 <h1>Camillas Tic Tac Toe</h1>
 
@@ -15,7 +16,7 @@
                 int y = j;
                 <div class="tictactoe-gamepiece
                          tictactoe-@board.Board[i,j].Style.ToString().ToLower()" @onclick="@(() => board.PieceClicked(x,y))"
-                     style="@(board.IsGamePieceAWinningPiece(i, j)? "opacity: 0.6" : "")"></div>
+                     style="@(board.IsGamePieceAWinningPiece(i, j)? "opacity: 0" : "")"></div>
             }
         </div>
     }
