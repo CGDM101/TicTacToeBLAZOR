@@ -16,7 +16,7 @@
                 int y = j;
                 <div class="tictactoe-gamepiece
                          tictactoe-@board.Board[i,j].Style.ToString().ToLower()" @onclick="@(() => board.PieceClicked(x,y))"
-                     style="@(board.IsGamePieceAWinningPiece(i, j)? "opacity: 0" : "")"></div>
+                     style="@(board.IsGamePieceAWinningPiece(i, j)? "opacity: 0.6" : "")"></div>
             }
         </div>
     }
